@@ -1,0 +1,42 @@
+@mixin button($color-font, $bgc-color) {
+    color: $color-font;
+    background-color: $bgc-color;
+}
+
+@mixin button-hover($color-font, $bgc-color) {
+    color: $color-font;
+    background-color: $bgc-color;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    li {
+        list-style-type: none;
+        width: 20%;
+
+        a {
+            display: block;
+            text-align: center;
+            margin: 0;
+            line-height: 50px;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-family: Roboto, Helvetica, sans-serif;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            @include button(#255, #def);
+
+            &:hover {
+                @include button_hover(#000, #dfe);
+            }
+        }
+    }
+}

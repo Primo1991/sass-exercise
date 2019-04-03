@@ -1,0 +1,26 @@
+=button($color-font, $bgc-color)
+    color: $color-font
+    background-color: $bgc-color
+
+=button_hover($color-font, $bgc-color)
+    color: $color-font
+    background-color: $bgc-color
+
+ul
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    margin: 10px 0
+
+    
+li 
+    list-style-type: none
+a
+    text-decoration: none   
+    padding: 10px 20px
+    font-family: Arial, Helvetica, sans-serif
+    text-transform: uppercase
+    +button(#fff, #000)
+
+    &:hover 
+        +button_hover(#222, #ddd)

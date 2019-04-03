@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+ul li {
+  list-style-type: none;
+  width: 20%;
+}
+
+ul li a {
+  display: block;
+  text-align: center;
+  margin: 0;
+  line-height: 50px;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-family: Roboto, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #255;
+  background-color: #def;
+}
+
+ul li a:hover {
+  color: #000;
+  background-color: #dfe;
+}
+/*# sourceMappingURL=style.css.map */
